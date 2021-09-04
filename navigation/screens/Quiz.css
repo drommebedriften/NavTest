@@ -14,13 +14,18 @@ body {
 
 
 .app {
-  background-color: #62cdff;
+  background-color: #dfdfdf;
   width: 450px;
   min-height: 200px;
   height: min-content;
   border-radius: 15px;
   padding: 20px;
   justify-content: space-evenly;
+  padding: 5.2px 8.3px;
+  margin-block: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .score-section {
@@ -68,12 +73,13 @@ button {
   width: 100%;
   font-size: 16px;
   color: #ffffff;
-  background-color: #252d4a;
+  background-color: #42c3ff;
   border-radius: 15px;
   display: flex;
-  padding: 5px;
+  padding: 10px;
+  margin: 2px;
   align-items: center;
-  border: 5px solid #234668;
+  border: 5px solid #42c3ff;
   cursor: pointer;
 }
 
