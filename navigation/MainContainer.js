@@ -1,18 +1,23 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 // Screens
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import Simple from './screens/Simple';
+import App from './screens/App';
+import './screens/Quiz.css';
+
 
 //Screen names
-const homeName = "Home";
-const detailsName = "Details";
-const settingsName = "Settings";
+const homeName = "Forside";
+const detailsName = "Spill";
+const settingsName = "Bedrifter";
+const profileName = "Profil";
 
 const Tab = createBottomTabNavigator();
 
@@ -27,17 +32,21 @@ function MainContainer() {
             let rn = route.name;
 
             if (rn === homeName) {
-              iconName = focused ? 'home' : 'home-outline';
+              iconName = focused ? 'widgets' : 'widgets-outline';
 
             } else if (rn === detailsName) {
-              iconName = focused ? 'list' : 'list-outline';
+              iconName = focused ? 'gamepad-square' : 'gamepad-square-outline';
 
             } else if (rn === settingsName) {
-              iconName = focused ? 'settings' : 'settings-outline';
+              iconName = focused ? 'factory' : 'factory';
+
+            } else if (rn === profileName) {
+              iconName = focused ? 'account-box' : 'account-box-outline';
             }
+            
 
             // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return <MaterialCommunityIcons name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
@@ -48,8 +57,9 @@ function MainContainer() {
         }}>
 
         <Tab.Screen name={homeName} component={Simple} />
-        <Tab.Screen name={detailsName} component={DetailsScreen} />
+        <Tab.Screen name={detailsName} component={App} />
         <Tab.Screen name={settingsName} component={SettingsScreen} />
+        <Tab.Screen name={profileName} component={SettingsScreen} />
 
       </Tab.Navigator>
     </NavigationContainer>
