@@ -11,7 +11,7 @@ import Forside from './screens/Forside';
 import Bedrifter from './screens/Bedrifter';
 import Profil from './screens/Profil';
 import './screens/Quiz.css';
-import './screens/Fagmoduler/Bedriftskort.css';
+import './screens/Bedriftskort/Bedriftskort.css';
 
 
 //Screen names
