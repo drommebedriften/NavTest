@@ -3,39 +3,27 @@ import React, { useState } from 'react';
 export default function App() {
 	const questions = [
 		{
-			questionText: 'Hva mener Petter Stordalen den viktigeste menneskelige ferdigheten er?',
+			questionText: 'I 2019 var det om lag 200 000 direkte og indirekte sysselsatte i petroleumssektroen i Norge. Hvor mange syssesatte estimerer forskningsinstituttet Sintef at en norsk havvind-satsing kan gi i 2050?',
 			answerOptions: [
-				{ answerText: 'Tolmodighet', isCorrect: false },
-				{ answerText: 'Evnen til å lytte', isCorrect: false },
-				{ answerText: 'Mellommenneskelige ferdigheter', isCorrect: true },
-				{ answerText: 'Salg', isCorrect: false },
+				{ answerText: '50 000 sysselsatte', isCorrect: true },
+				{ answerText: '200 000 sysselsatte', isCorrect: false },
+				{ answerText: '300 000 sysselsatte', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Hva mener Petter Stordalen den viktigeste menneskelige ferdigheten er?',
+			questionText: 'I 2020 eksporterte Norge for 325,2 milliarder av norsk olje og gass som er 42,2% av norges totale eksport i 2020. Hvor mye eksporterte vi av havvind-teknologi i 2020 i følge Sintef?',
 			answerOptions: [
-				{ answerText: 'Tolmodighet', isCorrect: false },
-				{ answerText: 'Evnen til å lytte', isCorrect: false },
-				{ answerText: 'Mellommenneskelige ferdigheter', isCorrect: true },
-				{ answerText: 'Salg', isCorrect: false },
+				{ answerText: '0,5 mrd', isCorrect: false },
+				{ answerText: '5 mrd', isCorrect: false },
+				{ answerText: '15 mrd', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'Hva mener Petter Stordalen den viktigeste menneskelige ferdigheten er?',
+			questionText: 'Hvor mye stadfester NHO-rapporten “Grønne elektriske verdikjeder” at en norsk havvind-satsing potensielt kan generere av eksportinntekter i 2050?',
 			answerOptions: [
-				{ answerText: 'Tolmodighet', isCorrect: false },
-				{ answerText: 'Evnen til å lytte', isCorrect: false },
-				{ answerText: 'Mellommenneskelige ferdigheter', isCorrect: true },
-				{ answerText: 'Salg', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Hva mener Petter Stordalen den viktigeste menneskelige ferdigheten er?',
-			answerOptions: [
-				{ answerText: 'Tolmodighet', isCorrect: false },
-				{ answerText: 'Evnen til å lytte', isCorrect: false },
-				{ answerText: 'Mellommenneskelige ferdigheter', isCorrect: true },
-				{ answerText: 'Salg', isCorrect: false },
+				{ answerText: '40 mrd', isCorrect: false },
+				{ answerText: '110 mrd', isCorrect: true },
+				{ answerText: '360 mrd', isCorrect: false },
 			],
 		},
 	];
