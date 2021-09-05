@@ -10,12 +10,13 @@ import DetailsScreen from './screens/DetailsScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import Simple from './screens/Simple';
 import App from './screens/App';
+import Spill from './screens/Spill'
 import './screens/Quiz.css';
 
 
 //Screen names
-const homeName = "Forside";
 const detailsName = "Spill";
+const homeName = "Forside";
 const settingsName = "Bedrifter";
 const profileName = "Profil";
 
@@ -56,9 +57,8 @@ function MainContainer() {
           labelStyle: { paddingBottom: 5, fontSize: 10 },
           style: { padding: 10, height: 70, margin: 10}
         }}>
-
+        <Tab.Screen name={detailsName} component={Spill} />
         <Tab.Screen name={homeName} component={Simple} />
-        <Tab.Screen name={detailsName} component={App} />
         <Tab.Screen name={settingsName} component={SettingsScreen} />
         <Tab.Screen name={profileName} component={SettingsScreen} />
 
