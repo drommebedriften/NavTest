@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 export default function App() {
+	
 	const questions = [
 		{
 			questionText: 'I 2019 var det om lag 200 000 direkte og indirekte sysselsatte i petroleumssektroen i Norge. Hvor mange syssesatte estimerer forskningsinstituttet Sintef at en norsk havvind-satsing kan gi i 2050?',

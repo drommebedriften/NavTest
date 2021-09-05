@@ -26,7 +26,7 @@ function MainContainer() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName={homeName}
+        initialRouteName={detailsName}
         screenOptions={({ route }) => ({
           
           tabBarIcon: ({ focused, color, size }) => {
