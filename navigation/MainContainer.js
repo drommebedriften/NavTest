@@ -5,13 +5,13 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 // Screens
-import HomeScreen from './screens/HomeScreen';
-import DetailsScreen from './screens/DetailsScreen';
-import SettingsScreen from './screens/SettingsScreen';
-import Simple from './screens/Simple';
-import App from './screens/App';
-import Spill from './screens/Spill'
+
+import Spill from './screens/Spill';
+import Forside from './screens/Forside';
+import Bedrifter from './screens/Bedrifter';
+import Profil from './screens/Profil';
 import './screens/Quiz.css';
+import './screens/Fagmoduler/Bedriftskort.css';
 
 
 //Screen names
@@ -58,9 +58,9 @@ function MainContainer() {
           style: { padding: 10, height: 70, margin: 10}
         }}>
         <Tab.Screen name={detailsName} component={Spill} />
-        <Tab.Screen name={homeName} component={Simple} />
-        <Tab.Screen name={settingsName} component={SettingsScreen} />
-        <Tab.Screen name={profileName} component={SettingsScreen} />
+        <Tab.Screen name={homeName} component={Forside} />
+        <Tab.Screen name={settingsName} component={Bedrifter} />
+        <Tab.Screen name={profileName} component={Profil} />
 
       </Tab.Navigator>
     </NavigationContainer>
