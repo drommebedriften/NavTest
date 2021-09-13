@@ -7,16 +7,15 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 // Screens
 
 import Spill from './screens/Spill';
-import Forside from './screens/Forside';
+import Feed from './screens/Feed';
 import Bedrifter from './screens/Bedrifter';
 import Profil from './screens/Profil';
-import './screens/Quiz.css';
-import './screens/Bedriftskort/Bedriftskort.css';
+
 
 
 //Screen names
 const detailsName = "Spill";
-const homeName = "Forside";
+const homeName = "Feed";
 const settingsName = "Bedrifter";
 const profileName = "Profil";
 
@@ -58,9 +57,10 @@ function MainContainer() {
           style: { padding: 10, height: 70, margin: 10}
         }}>
         <Tab.Screen name={detailsName} component={Spill} />
-        <Tab.Screen name={homeName} component={Forside} />
+        <Tab.Screen name={homeName} component={Feed} />
         <Tab.Screen name={settingsName} component={Bedrifter} />
         <Tab.Screen name={profileName} component={Profil} />
+        
 
       </Tab.Navigator>
     </NavigationContainer>

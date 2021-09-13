@@ -1,0 +1,142 @@
+
+
+.content-screen {
+  height: 100vh;
+  overflow-y:scroll;
+  scrollbar-width: none;
+
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  
+}
+
+.bedriftstor {
+  background-color: var(--white);
+  border-radius: 15px;
+  width: 375px;
+}
+
+.info {
+  flex-direction: column;
+  height: fit-content;
+  width: 311px;
+}
+
+.top-content {
+  flex-direction: column;
+  height: auto;
+}
+
+.header {
+}
+
+.person {
+  height: fit;
+  width: 225px;
+}
+
+.logo {
+  object-fit: cover;
+}
+
+.text-1 {
+  height: 20px;
+  letter-spacing: -0.24px;
+  line-height: 20px;
+  margin-left: 12px;
+  white-space: nowrap;
+  width: 175px;
+}
+
+.artikler {
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 10px;
+
+
+}
+
+.header-i657874653 {
+  letter-spacing: -0.24px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.description-i657874 {
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.description {
+  
+}
+
+.shorttext-i6578746 {
+  height: auto;
+  letter-spacing: -0.24px;
+  line-height: 20px;
+  width: 313px;
+  
+}
+
+.bedriftliten {
+  background-color: var(--white);
+  border-radius: 14px;
+  height: 70px;
+  margin-top: 10px;
+  width: 375px;
+}
+
+.bedrift {
+  display: flex;
+  margin-top: 10px;
+}
+
+.top {
+  display: flex;
+  width: 311px;
+}
+
+.person-1 {
+  display: flex;
+  height: 40px;
+  overflow: hidden;
+  width: 304px;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: column;
+  height:max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 12px;
+  width: 257px;
+}
+
+.text-2 {
+  letter-spacing: -0.24px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.date-i65787565383 {
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900,500,600|Roboto:400,500|Oleo+Script:400");
+
+* {
+  box-sizing: border-box;
+}

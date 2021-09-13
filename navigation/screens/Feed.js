@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
-import App from "./Bedrifter/App"
-import "./Bedrifter/Bedrifter.css";
+import { View, Text} from 'react-native';
+import App from "./Feed/App";
+import "./Feed/Feed.css";
 
 
-export default function Bedrifter({ navigation }) {
+export default function Feed({ navigation }) {
     return (
 
 
